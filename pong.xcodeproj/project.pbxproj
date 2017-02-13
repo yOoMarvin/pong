@@ -17,6 +17,7 @@
 		58172A2B1E4C97F5006B7D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58172A291E4C97F5006B7D86 /* LaunchScreen.storyboard */; };
 		58172A361E4C97F6006B7D86 /* pongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172A351E4C97F6006B7D86 /* pongTests.swift */; };
 		58172A411E4C97F6006B7D86 /* pongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172A401E4C97F6006B7D86 /* pongUITests.swift */; };
+		58944A301E51F1320056D0F4 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58944A2F1E51F1320056D0F4 /* LLPIXEL3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		58172A3C1E4C97F6006B7D86 /* pongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58172A401E4C97F6006B7D86 /* pongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pongUITests.swift; sourceTree = "<group>"; };
 		58172A421E4C97F6006B7D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58944A2F1E51F1320056D0F4 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				58172A271E4C97F5006B7D86 /* Assets.xcassets */,
 				58172A291E4C97F5006B7D86 /* LaunchScreen.storyboard */,
 				58172A2C1E4C97F5006B7D86 /* Info.plist */,
+				58944A2F1E51F1320056D0F4 /* LLPIXEL3.ttf */,
 			);
 			path = pong;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58172A261E4C97F5006B7D86 /* Main.storyboard in Resources */,
+				58944A301E51F1320056D0F4 /* LLPIXEL3.ttf in Resources */,
 				58172A1D1E4C97F5006B7D86 /* GameScene.sks in Resources */,
 				58172A281E4C97F5006B7D86 /* Assets.xcassets in Resources */,
 				58172A2B1E4C97F5006B7D86 /* LaunchScreen.storyboard in Resources */,
@@ -526,6 +530,7 @@
 				58172A471E4C97F6006B7D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58172A481E4C97F6006B7D86 /* Build configuration list for PBXNativeTarget "pongTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				58172A4A1E4C97F6006B7D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58172A4B1E4C97F6006B7D86 /* Build configuration list for PBXNativeTarget "pongUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				58172A4D1E4C97F6006B7D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
