@@ -9,14 +9,15 @@
 import Foundation
 import UIKit
 
+enum gameType {
+    case easy
+    case medium
+    case hard
+    case player2
+}
+
+
 class MenuViewController: UIViewController {
-    
-    enum gameType {
-        case easy
-        case medium
-        case hard
-        case player2
-    }
     
     @IBAction func Player2(_ sender: Any) {
         moveToGame(game: .player2)
@@ -35,6 +36,9 @@ class MenuViewController: UIViewController {
     
     func moveToGame(game: gameType){
         let gameViewController = self.storyboard?.instantiateViewController(withIdentifier: "gameViewController") as! GameViewController
+        
+        currentGameType = game
+        
         self.navigationController?.pushViewController(gameViewController, animated: true)
     }
 }

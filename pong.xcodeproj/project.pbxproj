@@ -107,11 +107,11 @@
 		58172A191E4C97F5006B7D86 /* pong */ = {
 			isa = PBXGroup;
 			children = (
-				58944A311E5332590056D0F4 /* MenuViewController.swift */,
 				58172A1A1E4C97F5006B7D86 /* AppDelegate.swift */,
 				58172A1C1E4C97F5006B7D86 /* GameScene.sks */,
 				58172A1E1E4C97F5006B7D86 /* Actions.sks */,
 				58172A201E4C97F5006B7D86 /* GameScene.swift */,
+				58944A311E5332590056D0F4 /* MenuViewController.swift */,
 				58172A221E4C97F5006B7D86 /* GameViewController.swift */,
 				58172A241E4C97F5006B7D86 /* Main.storyboard */,
 				58172A271E4C97F5006B7D86 /* Assets.xcassets */,
