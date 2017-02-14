@@ -11,6 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    //MARK : - Variables
     var ball = SKSpriteNode()
     var enemy = SKSpriteNode()
     var main = SKSpriteNode()
@@ -21,7 +22,7 @@ class GameScene: SKScene {
     var score = [Int]()
     
     
-    
+    //MARK : - Init function for view
     override func didMove(to view: SKView) {
         
         topLabel = self.childNode(withName: "topLabel") as! SKLabelNode
@@ -49,6 +50,7 @@ class GameScene: SKScene {
     
     
     
+    //MARK: - Help functions
     
     func startGame() {
         score = [0,0]
@@ -127,6 +129,9 @@ class GameScene: SKScene {
     }
     
     
+    
+    
+    
     //MARK: - update function
     
     override func update(_ currentTime: TimeInterval) {
@@ -149,8 +154,7 @@ class GameScene: SKScene {
         }
         
         
-        
-        
+        //Define at which point a score is added
         if ball.position.y <= main.position.y - 30 {
             addScore(playerWhoWon: enemy)
             
