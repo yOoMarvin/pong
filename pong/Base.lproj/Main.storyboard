@@ -1,14 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="huA-Dn-cL1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1cG-Sf-bC8">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="huA-Dn-cL1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aCQ-yZ-EID">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6jw-Zc-xns" kind="relationship" relationship="rootViewController" id="vAW-A0-nAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRX-Q4-zTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1518" y="134"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="Kgf-uC-ll9">
+            <objects>
+                <viewController id="6jw-Zc-xns" customClass="MenuViewController" customModule="pong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhO-Q8-REo"/>
+                        <viewControllerLayoutGuide type="bottom" id="lph-fT-vLq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RI8-GQ-RyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsl-fC-7XG">
+                                <rect key="frame" x="160" y="164" width="55" height="30"/>
+                                <state key="normal" title="2 Player"/>
+                                <connections>
+                                    <action selector="Player2:" destination="6jw-Zc-xns" eventType="touchUpInside" id="lQt-SN-apV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIe-xM-gQ5">
+                                <rect key="frame" x="171" y="344" width="33" height="30"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="Easy:" destination="6jw-Zc-xns" eventType="touchUpInside" id="bMU-Gn-PSI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-LC-NNb">
+                                <rect key="frame" x="160" y="424" width="55" height="30"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="Medium:" destination="6jw-Zc-xns" eventType="touchUpInside" id="B8k-KO-S49"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8e-4M-8GH">
+                                <rect key="frame" x="171" y="504" width="34" height="30"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="Hard:" destination="6jw-Zc-xns" eventType="touchUpInside" id="r3w-d1-hTx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D7W-LC-NNb" firstAttribute="top" secondItem="uIe-xM-gQ5" secondAttribute="bottom" constant="50" id="3AE-sI-e0d"/>
+                            <constraint firstItem="j8e-4M-8GH" firstAttribute="top" secondItem="D7W-LC-NNb" secondAttribute="bottom" constant="50" id="6bL-eE-pf4"/>
+                            <constraint firstItem="j8e-4M-8GH" firstAttribute="centerX" secondItem="RI8-GQ-RyQ" secondAttribute="centerX" id="GRo-zN-irX"/>
+                            <constraint firstItem="uIe-xM-gQ5" firstAttribute="top" secondItem="qsl-fC-7XG" secondAttribute="bottom" constant="150" id="bH2-rs-I3W"/>
+                            <constraint firstItem="qsl-fC-7XG" firstAttribute="top" secondItem="fhO-Q8-REo" secondAttribute="bottom" constant="100" id="bru-lz-RQ1"/>
+                            <constraint firstItem="uIe-xM-gQ5" firstAttribute="centerX" secondItem="RI8-GQ-RyQ" secondAttribute="centerX" id="iBa-HQ-98d"/>
+                            <constraint firstItem="D7W-LC-NNb" firstAttribute="centerX" secondItem="RI8-GQ-RyQ" secondAttribute="centerX" id="skn-OO-bIi"/>
+                            <constraint firstItem="qsl-fC-7XG" firstAttribute="centerX" secondItem="RI8-GQ-RyQ" secondAttribute="centerX" id="xs2-gQ-WYc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LK6-C1-7CG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8y-sc-lyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="135"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameViewController" id="BV1-FR-VrT" customClass="GameViewController" customModule="pong" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -21,6 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="84" y="134"/>
         </scene>
     </scenes>
 </document>
